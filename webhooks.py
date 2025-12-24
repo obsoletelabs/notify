@@ -14,9 +14,10 @@ def discord(webhook_url, message_content, username="IP notifier"):
     try:
         result.raise_for_status()
     except requests.exceptions.HTTPError as err:
-        print(err)
+        #print(err)
+        pass
     else:
-        print(f"Payload delivered successfully, code {result.status_code}.")
+        #print(f"Payload delivered successfully, code {result.status_code}.")
         return
 
 # i dont know why you wanted this but its here now
@@ -31,7 +32,8 @@ def generic(webhook_url, message_content):
     try:
         result.raise_for_status()
     except requests.exceptions.HTTPError as err:
-        print(err)
+        #print(err)
+        pass
     else:
-        print(f"Payload delivered successfully, code {result.status_code}.")
+        #print(f"Payload delivered successfully, code {result.status_code}.")
         return
