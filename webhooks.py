@@ -2,7 +2,7 @@
 
 import requests
 
-def discord(webhook_url, message_content, username="IP notifier"):
+def discord(webhook_url: str, message_content: str, username: str ="IP notifier"):
     """Discord webhook sender"""
     message = {
     "username" : username,
@@ -19,7 +19,7 @@ def discord(webhook_url, message_content, username="IP notifier"):
         return result.status_code
 
 # i dont know why you wanted this but its here now
-def generic(webhook_url, message_content):
+def generic(webhook_url: str, message_content: str):
     """Webhook sender"""
     message = {
     "content" : message_content
