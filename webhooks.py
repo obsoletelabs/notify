@@ -16,7 +16,7 @@ def discord(webhook_url, message_content, username="IP notifier"):
     except requests.exceptions.HTTPError as err:
         return err
     else:
-        return result.status_code()
+        return result.status_code
 
 # i dont know why you wanted this but its here now
 def generic(webhook_url, message_content):
@@ -32,4 +32,4 @@ def generic(webhook_url, message_content):
     except requests.exceptions.HTTPError as err:
         return err
     else:
-        return result.status_code()
+        return result.status_code
