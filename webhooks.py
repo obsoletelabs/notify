@@ -2,6 +2,7 @@
 
 import requests
 
+
 def discord(webhook_url: str, message_content: str, username: str ="IP notifier"):
     """Discord webhook sender"""
     message = {
