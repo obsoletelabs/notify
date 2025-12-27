@@ -1,5 +1,6 @@
 
-How to use email sender:
+# How to use email sender:
+
 thats the headers
 
 ```py
@@ -31,9 +32,12 @@ smtp_retries = int(environ.get("NOTIFIER_SMTP_RETRIES", "3"))
 smtp_retry_delay = float(environ.get("NOTIFIER_SMTP_RETRY_DELAY", "1.5"))
 ```
 
-and you call
-```send_email_notification(email_context, sendtoaddresses) where the sendto is optional
-email context is a dictionary
+# and you call
+
+```send_email_notification(email_context, sendtoaddresses)``` where the sendto is optional
+
+## email context is a dictionary
+
 ```py
 subject = context.get("Subject", "No Subject")
 greeting = context.get("Greeting", "Hello,")
